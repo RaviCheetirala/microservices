@@ -10,7 +10,7 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  imageName: 'BookingLookupService:$(build.buildId)'
+  imageName: 'bookinglookupservice:$(build.buildId)'
 
 steps:
 - script: mvn clean install
