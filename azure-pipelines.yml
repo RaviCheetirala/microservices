@@ -11,6 +11,7 @@ pool:
 
 variables:
   imageName: 'bookinglookupservice:$(build.buildId)'
+  dockerId: 'raviacregistry'
 
 steps:
 - script: mvn clean install
