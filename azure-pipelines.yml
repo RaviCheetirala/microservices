@@ -15,8 +15,9 @@ variables:
 
 steps:
 - script: mvn clean install
-  workingDirectory: BookingService
+  workingDirectory: BookingLookupService
   displayName: 'Maven Install'
+  
 - script: docker build -f Dockerfile -t $(dockerId).azurecr.io/$(dockerId)/$(imageName) .
   workingDirectory: BookingService
   displayName: 'Docker Image Build'
